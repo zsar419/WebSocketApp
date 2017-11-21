@@ -15,7 +15,7 @@
         const ws = new WebSocket(HOST);
         let el = document.getElementById('ws-data');
         ws.onmessage = function (event) {
-            el.innerHTML = '[Broadcasted] - ' + event.data;
+            el.innerHTML = '[RECIEVED] ' + event.data;
         };
     </script>
 </body>

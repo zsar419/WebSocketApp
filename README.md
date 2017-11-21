@@ -10,7 +10,8 @@ A web socket which allows client-server communication and broadcast functionalit
 - Connect to: ws://localhost:3000/
     - using web-socket client such as Smart Websocket Client (chrome extension)
         - https://chrome.google.com/webstore/detail/smart-websocket-client/omalebghpgejjiaoknljcfmglgbpocdp
-- To send messages to all clients type: "broadcast: <your-message>"
+- To send messages to all clients type: "broadcast: [your-message]"
+    - E.g. "broadcast: hello world!"
 
 ## Web Sockets ##
 - Web socket lib: https://github.com/websockets/ws
