@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Socket</title>
+</head>
+<body>
+    <p>Using a web-socket client, connect to the following web-socket address: <a href="#">ws://web-socket-app.herokuapp.com/</a></p>
+    <p id="ws-data">WS Log:</p>
+    <script>
+        // Our client, index.html, is a simple page that listens for time updates from the server
+        const HOST = location.origin.replace(/^http/, 'ws')
+        const ws = new WebSocket(HOST);
+        let el = document.getElementById('ws-data');
+        ws.onmessage = function (event) {
+            el.innerHTML = '[Broadcasted] - ' + event.data;
+        };
+    </script>
+</body>
+</html>

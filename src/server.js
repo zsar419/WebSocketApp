@@ -1,6 +1,8 @@
 const express = require('express');
 const http = require('http');
 const WebSocket = require('ws');
+const path = require('path');
+
 
 const app = express();
 
@@ -67,7 +69,14 @@ setInterval(() => {
     });
 }, 2000);  // Check at 10s intervals
 
+const INDEX = path.join(__dirname, 'index.html');
+app.get('/', function (req, res) {
+    res.sendFile(INDEX);
+    // res.send('Using a web-socket client, connect to the following web-socket address: ws://web-socket-app.herokuapp.com/');
+});
+
 // Start server
-server.listen(process.env.PORT || 3000, () => {
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
     console.info(`Server started on port ${server.address().port}...`);
 });
