@@ -12,6 +12,7 @@ A web socket which allows client-server communication and broadcast functionalit
         - https://chrome.google.com/webstore/detail/smart-websocket-client/omalebghpgejjiaoknljcfmglgbpocdp
 - To send messages to all clients type: "broadcast: [your-message]"
     - E.g. "broadcast: hello world!"
+    - Note: The frontend website will only recieve broadcasted messages 
 
 ## Web Sockets ##
 - Web socket lib: https://github.com/websockets/ws
