@@ -4,7 +4,7 @@
   "description": "A simple es6 nodejs websocket app",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "node src/server.js"
   },
   "author": "zeeshan sarwar",
   "license": "ISC",

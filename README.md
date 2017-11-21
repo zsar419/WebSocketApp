@@ -1,6 +1,7 @@
 # Websocket Web App
 A web socket which allows client-server communication and broadcast functionality
-- Web-socket client link: ws://
+- Web-socket client link: ws://web-socket-app.herokuapp.com
+    - connect to this using web-socket client
 
 ## Instructions ##
 - npm install
